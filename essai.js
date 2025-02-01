@@ -215,3 +215,22 @@ $(document).ready(function(){
 
     changeBackground7();
 });
+
+
+/*huitieme image projet-----------*/
+$(document).ready(function(){
+    var images8 = ["img/r1.jpg",
+        "img/r2.jpg", "img/r3.jpg"];
+
+    var index8 = 0;
+
+    function changeBackground8(){
+        $(".carousel-container8").css("background-image", "url('" + images8[index8] + "')");
+
+        index8 = (index8 + 1) % images8.length;
+    }
+
+    setInterval(changeBackground8, 5000);
+
+    changeBackground8();
+});
